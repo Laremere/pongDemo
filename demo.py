@@ -91,11 +91,11 @@ class Ball(object):
 			self.dy = -1
 
 		if self.x < -1 * self.width:
-			self.ScoreLeft += 1
+			self.ScoreRight += 1
 			self.ScoreLabel.text = str(self.ScoreLeft) + " - " + str(self.ScoreRight)
 			self.respawnTime = 2
 		if self.x > state.width:
-			self.ScoreRight += 1
+			self.ScoreLeft += 1
 			self.ScoreLabel.text = str(self.ScoreLeft) + " - " + str(self.ScoreRight)
 			self.respawnTime = 2
 
